@@ -25,7 +25,7 @@
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="/user/afentoulidis">User</a>
+                    <a class="nav-link" href="/users">Users</a>
                 </li>                
             </ul>
             <form class="d-flex" role="search">
@@ -37,7 +37,7 @@
     </nav>
 
 
-    @yield(section: 'content');
+    @yield('content');
 
     <footer class="p-5 bg-dark text-white text-center">
         Afentoulidis &copy; 2024
