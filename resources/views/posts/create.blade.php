@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col-12">
-            <form method="POST" action="/posts/create">
+            <form method="POST" action="/posts/create" enctype="multipart/form-data">
                 
                 @csrf
 
@@ -33,7 +33,7 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Image</label>
-                    <input name="image" type="url" class="form-control" id="image" placeholder="https://">
+                    <input name="image" type="file" class="form-control" id="image" placeholder="https://">
                 </div>
 
                 <div class="mb-3">

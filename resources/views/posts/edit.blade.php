@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col-12">
-            <form method="POST" action="/posts/{{$post->id}}/update">
+            <form method="POST" enctype="multipart/form-data" action="/posts/{{$post->id}}/update">
                 
                 @csrf
                 <input type="hidden" name="_method" value="put" />
@@ -34,7 +34,7 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Image</label>
-                    <input name="image" value="{{$post->image}} "type="url" class="form-control" id="image" placeholder="https://">
+                    <input name="image" type="file" class="form-control" id="image">
                 </div>
 
                 <div class="mb-3">
